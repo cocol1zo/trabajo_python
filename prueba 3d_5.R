@@ -1,0 +1,5 @@
+install.packages("rgl")
+library(scatterplot3d)
+library("readxl", lib.loc = "c:/Archivos de programa/R/R-3.6.1/library")
+testData5 <- read.csv ("D:/GASTO2019.csv")
+scatterplot3d(testData5$MONTO_COMPROMETIDO, testData5$MONTO_DEVENGADO, testData5$GENERICA_NOMBRE, testData5$MONTO_PIA, col='blue', size = 3)
